@@ -10,8 +10,10 @@ int main() {
   puts("4) Maior número da lista");
   puts("5) Calcular média");
   puts("6) Verificar os lados de um triângulo");  
-  puts("7) Contagem regressiva");  
-  puts("8) Tabuada");  
+  puts("7) Cáculo do IMC");   
+  puts("8) Conversão da temperatura de Celcius para Farenheit");   
+  puts("9) Contagem Regressiva");   
+  puts("10) Tabuada");   
   scanf("%d", &option);
   
 
@@ -33,11 +35,17 @@ int main() {
     break;
   case 6:
     checkTriangleSides();
-    break;
+    break; 
   case 7:
-    countdown();
+    calculateBMI();
     break;
   case 8:
+    celciusToFarenheit();
+    break;
+  case 9: 
+    countdown();
+    break;
+  case 10:
     multiplicationTable();
     break;
   default:
@@ -167,6 +175,25 @@ void checkTriangleSides() {
   } else {
     puts("Triângulo válido");
   }
+}
+
+void calculateBMI() {
+  float height, weight;
+  puts("Esse programa calcula o IMC");
+  puts("Insira a altura em metros");
+  scanf("%f", &height);
+  puts("Insira o peso em quilos");
+  scanf("%f", &weight);
+
+  printf("IMC: %.2f\n", weight / (height * height));
+}
+
+void celciusToFarenheit() {
+  float temperatureInCelcius;
+  puts("Esse programa converta uma temperatura em Celcius para Farenheit");
+  puts("Insira a temperatura");
+  scanf("%f", &temperatureInCelcius);
+  printf("Temperatura em Farenheit: %.2f", (temperatureInCelcius * 1.8) + 32);
 }
 
 void countdown() {
