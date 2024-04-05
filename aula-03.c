@@ -47,6 +47,23 @@ void rest() {
   printf("Resultado: %.2f", firstNumber % secondNumber);
 }
 
+void challenge() {
+  float weight;
+  int age;
+  int birthdateYear;
+
+  printf("Qual seu peso?\n");
+  scanf("%f", &weight);
+  printf("Qual sua idade?\n");
+  scanf("%d", &age);
+  printf("Qual o ano do seu nascimento?\n");
+  scanf("%d", &birthdateYear);
+  weight++;
+  birthdateYear += 2;
+
+  printf("Sua idade: %d;\n Seu peso somado com 1 %.3f;\n Seu ano de nascimento somado com 2 %d\n", age, weight, birthdateYear);
+}
+
 int main() {    
   char operation[1];
   
@@ -72,6 +89,6 @@ int main() {
     printf("Operação inválida\n");
   }
 
-
+  challenge();
   return 0;
 }
