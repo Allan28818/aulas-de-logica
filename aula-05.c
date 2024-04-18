@@ -57,6 +57,10 @@ int main() {
   return 0;
 }
 
+// 1. Positivo ou Negativo:
+// Escreva um programa que leia um número inteiro do usuário e imprima se
+// ele é positivo, negativo ou zero.
+
 void isPositiveOrNegative() {
   int number;
 
@@ -73,6 +77,9 @@ void isPositiveOrNegative() {
   }
 }
 
+// 2. Par ou Ímpar:
+// Crie um programa que leia um número inteiro do usuário e imprima se ele
+// é par ou ímpar.
 void isEvenOrOdd() {
   int number;
 
@@ -87,7 +94,8 @@ void isEvenOrOdd() {
   }
 }
 
-
+// 3. Ano Bissexto:
+// Escreva um programa que verifique se um ano dado é bissexto ou não.
 void isLeapYear() {
   int year;
 
@@ -104,6 +112,8 @@ void isLeapYear() {
   }
 }
 
+// 4. Máximo de Três Números:
+// Leia três números inteiros do usuário e imprima o maior deles.
 void findHighestNumber() {
   int numbers[4] = {};
   int firstNumber;
@@ -135,6 +145,11 @@ void findHighestNumber() {
   printf("Maior número %d", highestNumber);
 }
 
+// 5. Calculadora de Notas:
+// Peça ao usuário quantos alunos há na sala. Em seguida, através de um
+// laço while, peça ao usuário para inserir as notas de todos os alunos da
+// sala, um por vez. Por fim, o programa deve calcular e mostrar a média
+// aritmética da turma.
 void calculateAverage() {
   int amountOfStudents;
   int i = 1;
@@ -156,6 +171,10 @@ void calculateAverage() {
 }
  
 
+// 6. Verificação de Triângulo:
+// Solicite ao usuário os comprimentos dos três lados de um triângulo.
+// Verifique se esses comprimentos formam um triângulo válido (ou seja, a
+// soma de quaisquer dois lados deve ser maior que o terceiro lado).
 void checkTriangleSides() {
   float side1, side2, side3;
   puts("Esse programa verifica se o triângulo é válido");
@@ -177,6 +196,10 @@ void checkTriangleSides() {
   }
 }
 
+// 7. Calculadora de IMC:
+// Peça ao usuário seu peso (em kg) e altura (em metros). Calcule o Índice
+// de Massa Corporal (IMC) e imprima a categoria correspondente (abaixo
+// do peso, normal, sobrepeso, obeso).
 void calculateBMI() {
   float height, weight;
   puts("Esse programa calcula o IMC");
@@ -188,6 +211,9 @@ void calculateBMI() {
   printf("IMC: %.2f\n", weight / (height * height));
 }
 
+// 8. Conversão de Temperatura:
+// Leia uma temperatura em graus Celsius e converta-a para Fahrenheit
+// usando a fórmula: F = (9/5) * C + 32 .
 void celciusToFarenheit() {
   float temperatureInCelcius;
   puts("Esse programa converta uma temperatura em Celcius para Farenheit");
@@ -196,6 +222,10 @@ void celciusToFarenheit() {
   printf("Temperatura em Farenheit: %.2f", (temperatureInCelcius * 1.8) + 32);
 }
 
+
+// 9. Contagem Regressiva:
+// Peça ao usuário um número inteiro positivo e faça uma contagem
+// regressiva a partir desse número até 1.
 void countdown() {
   int counter;
   int i;
@@ -211,6 +241,9 @@ void countdown() {
   }
 }
 
+// 10. Tabuada:
+// Solicite ao usuário um número inteiro e imprima a tabuada desse número
+// de 1 a 10.
 void multiplicationTable() {
   int numberToMultiply;
   int i;
