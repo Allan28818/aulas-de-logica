@@ -94,13 +94,15 @@ void sumRandomMatrixes() {
       printf("Soma coluna %d\n", columnSum);
       
     }
+    printf("Soma da linha [%d]: %d\n", i + 1,  lineSum);
+    printf("Soma da coluna [%d]: %d\n", i + 1, columnSum);
+
+    lineSum = 0;
+    columnSum = 0;
     printf("\n");
   }
 
   printf("\n");
-  printf("Soma de linhas: %d\n", lineSum);
-  printf("Soma de colunas: %d", columnSum);
-
 }
 
 // **Exercício 4:**
