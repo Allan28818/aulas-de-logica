@@ -29,22 +29,24 @@ void primeNumbersChecker() {
 // Fibonacci, onde N é fornecido pelo usuário.
 void fibonacciGenerator() {
   int seriesNumber;
-  int firstNumber = 1;
-  int secondNumber = 1;
+  double firstNumber = 1;
+  double secondNumber = 1;
 
   puts("Programa que calcula N termos da sequência de Fibonacci.");
   puts("Insira a quantidade de séries que deseja visualizar...");
   scanf("%d", &seriesNumber);
   puts("_________________________");
   int i;
+
+  int interactions = 0;
   for(i = 0; i < seriesNumber; i++) {
     if(i == 0) {
-      printf("%d\n", firstNumber);
-    }
-
+      interactions += 1;
+      printf("%.0f\n", firstNumber);
+    }     
     secondNumber = firstNumber + secondNumber;
 
-    printf("%d + %d = %d\n", firstNumber, secondNumber - firstNumber, secondNumber);
+    printf("%0.f + %.0f = %.0f\n", firstNumber, secondNumber - firstNumber, secondNumber);
 
     firstNumber = secondNumber - firstNumber;    
   }  
